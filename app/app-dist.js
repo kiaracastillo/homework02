@@ -1,0 +1,1 @@
+import{addPageContent,setLoggedInOut}from"../model/model.js";function initListeners(){$("nav .links a").on("click",(e=>{e.preventDefault();let n=e.currentTarget.id;addPageContent(n)})),$("nav .log span").on("click",(e=>{e.preventDefault(),setLoggedInOut()}))}$(document).ready((function(){addPageContent("home"),initListeners()}));
